@@ -1,0 +1,447 @@
+body{
+    margin: 0px;
+}
+/* header */
+#body_header{
+    height: 65vh;
+    background-image: url(./macbook_mouse.jpg);
+    background-attachment: fixed;  
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    
+}
+/* navigation_list */
+.navigation_list{
+    list-style: none;
+    padding: 0px;
+    word-spacing: 15px;
+    margin: 0px;
+}
+.navigation_list li{
+    display: inline-block;
+  font-family: sans-serif;
+    margin-top: 22px;
+}
+.navigation_list li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s,border-bottom 4s;
+}
+.navigation_list li a:hover{
+    text-decoration: underline;
+    color: wheat;
+}
+.text_align{
+    text-align: center;
+}
+/* Name and social media*/
+#name{
+   color: white;
+   position: absolute;
+   top: 23%;
+   left: 32%;
+   font-weight: bold;
+   font-size: 3em;
+   font-family: sans-serif;
+}
+ #name-social{
+    margin-top: 20vh;  
+}
+#name{
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.9px; 
+   position: relative;
+   left: 1.5%;
+   text-align: center;
+   margin-bottom: 0.5px;
+   font-family: sans-serif;
+}
+.social-icons{
+    list-style: none;
+
+} 
+.social-icons li {
+    display: inline-block;
+   padding: 12px;
+   
+}
+.social-icons li i{
+    padding: 10px;
+    border-radius: 50%;
+}
+.social-icons li i:hover{
+   
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.5);
+}
+/* about */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#my_image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+    
+}
+#my_image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%; 
+    box-shadow: 1px 1px 10px 2px  lightgray;
+}
+.para{
+    text-align: justify;
+    margin: auto;
+    color: gray;
+    letter-spacing: 1px;
+    height: 100%;
+    width: 70%;
+    padding: 10px;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+.mark{
+    color: #2857a4;
+}
+/* section */
+section{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n){
+    background-color: white;
+}
+section:nth-child(2n+1){
+    background-color: whitesmoke;
+}
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+.section-heading span{
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #6f99e2;
+   padding-top: 10px;
+   display: inline-block;
+   margin-right: 0.5rem;
+}
+.m75px{
+margin-bottom: 75px;
+}
+/* skill_section */
+.skill-display{
+    width:75%;
+   display: flex;
+   padding: 10px;
+   margin-bottom: 30px;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+.skill-label{
+   
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    background-color: lightgray;
+    margin: 25px;
+    overflow: hidden;
+}
+.skill-label>div{ 
+    box-shadow: 1px 1px 5px 2px #989882;
+    border-radius: 20px 0px 0px 20px;
+}
+.skill-name span{
+ margin: 20px 0px 0px 10px;
+ font-size: 1rem;
+ color: white;
+ margin-left: 10px;
+ vertical-align: middle;
+}
+.eighty-percentage{
+    height: inherit;
+width: 80%;
+}
+.sixty-percentage{
+height: inherit;
+width: 60%;
+}
+.fifty-percentage{
+    height: inherit;
+width: 50%;
+}
+.fourty-percentage{
+    height: inherit;
+width: 40%;
+}
+.bg-red{
+    background-color: red;
+}
+.bg-green{
+    background-color: green;
+}
+.bg-blue{
+    background-color: aqua;
+}
+.bg-blue{
+    background-color: indigo;
+}
+/* portfolio */
+#portfolio{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+#portfolio_container{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    
+}
+.portfolio_image{
+    position: relative;
+   max-width: 280px; 
+   overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.portfolio_image img{
+height: 100%;
+width: 100%;
+}
+.portfolio_details{
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color:transparent;
+    padding: 10px;
+    
+}
+.portfolio_details p{
+    position: relative;
+    top: 30%;
+    left: 5%;
+    transform: translate(-5%,-30%);
+    text-align: center;
+}
+.portfolio_image:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio_image:hover .portfolio_details {
+    background-color: #80808078;
+    color: white;
+}
+#contact{
+    background-image: linear-gradient(to right top,rgba(0,0,255,0.7),rgba(75,0,130,0.8));
+    width: 100vw;
+}
+ .section-heading_c{
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 2em;
+}
+#contact_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.input_details{
+    display: inline-block;
+    margin-left: -30px;
+}
+.input_details .message{
+    border: none;
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 2px solid whitesmoke;
+    width: 400px;
+   text-align: left;
+   margin: 20px;
+   font-size: 1em;
+   padding: 10px;
+}
+.input_details .submit{
+  justify-content: center;
+   background-color: rgba(255, 255, 255, 0);
+   font-size: 15px;
+   font-family: sans-serif;
+   margin: 25px;
+   padding: 10px;
+   border-radius: 3px;
+   color: whitesmoke;
+   border: 2px solid whitesmoke;
+   position: relative;
+   left: 25%;
+   transition: color 0.5s;
+}
+.input_details .submit:hover{
+    color: orange;
+}
+.details .para1{
+    height: 70px;
+    width: 500px;
+    text-align: justify;  
+}
+.details{
+    color: #ffff;
+    margin-left: 40px;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.touch{
+    font-weight: 700;
+    margin-right: -30px;
+}
+/* Experience */
+.timeline{
+    /* border: 1px solid black; */
+    width: 75%;
+    position: relative;
+  
+}
+.timeline_container{
+   position: relative;
+   left: 5%;
+   width: 40%;
+   /* border: 1px solid black; */
+   min-height: 150px;
+   margin: 6px;
+}
+@media all and (max-width:600px){
+    .timeline_container{
+        position: relative;
+        left: 5%;
+        width: 40%;
+        /* border: 1px solid black; */
+        min-height: 150px;
+        margin: 6px;
+     }
+    }
+.timeline_container:nth-child(2n){
+    left: 55%;
+}
+
+
+.timeline_container:nth-child(2n)::after{
+    content :'';
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: -16%;
+    height: 0.5rem;
+    width: 0.5rem;
+    top: 52%;
+    z-index: 1;
+}
+.timeline_container:nth-child(2n+1)::after{
+    content :'';
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: -11.5%;
+    height: 0.5rem;
+    width: 0.5rem;
+    top: 48%;
+    z-index: 1;
+}
+.animation{
+    position: absolute;
+    border: 2px dashed cyan;
+    height: 74%;
+    width: 0;
+    top: 13%;
+    left: 49.6%;
+}
+#timeline-divider .timeline-traveller  {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+/* .sticky{
+    position: sticky;
+    top: 52%;
+    z-index: 2;
+    transform: rotate(90deg);
+} */
+#animation-education i {
+    transform: rotate(90deg);
+  	margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+.designation{
+    line-height: 0;
+    font-family: sans-serif;
+    font-size: 10px;
+    text-align: right;
+    margin: 10px;
+}
+.designation::after{
+    content: '';
+    background-image: url(https://1000logos.net/wp-content/uploads/2023/02/ChatGPT-Logo.png);
+    display: flex;
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    top: -8%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+}
+.timeline_para{
+  text-align: justify;
+  color: gray;
+  margin-top: 20px;
+}
+#timeline-divider{
+    position: absolute;
+    width: 0;
+    top: 8%;
+    left: 50%;
+    border: 2px dashed #0096fa6b;
+    height: 75%;
+    color: #433E3F;
+}
+/* <-----> */
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 8%;
+    left: 50%;
+    border: 2px dashed #0096fa6b;
+    height: 75%;
+    color: #433E3F;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+  	margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
